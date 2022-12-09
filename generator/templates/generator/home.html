@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <font color="white">
+    <title>Password Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+        <div align="center">
+        <br><br>
+        <h1 color="white">PASSWORD GENERATOR</h1>
+        <br><br>
+
+        <form action="{% url 'password' %}">
+            <select name='lendth'>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected="selected">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+            </select>Lendth
+
+            <br><br>
+            <input type='checkbox' name="uppercace"> ABC
+            <br><br>
+            <input type='checkbox' name="numbers"> 123
+            <br><br>
+            <input type='checkbox' name="special"> $@#
+            <br><br><br><br><br>
+            <input type="submit" value="Generate Password" class="btn btn-warning">
+            <br>
+
+        </form>
+
+        <br><br>
+
+        <a href="{% url "More" %}" class="btn">More</a>
+
+    </div>
+    <body>
+        <style>
+            body {background: url('https://i.pinimg.com/originals/75/07/24/750724d25ee098a2680faf870c1b920f.jpg') center 0px; background-size: cover; background-repeat: no-repeat;
+
+            }
+        </style>
+    </body>
+    </font>
